@@ -1,31 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fallout Memory Game</title>
-    <!-- TODO: Connect the given styles file to this HTML -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <header class="header">
             <h1>Memory Game</h1>
             <h2>FallOut Edition</h2>
         </header>
-
         <section class="score-panel">
             <h3>Score Panel</h3>
         <ul id="star-rating" class="star-rating">
-            <li class="star"><i class="fa fa-star"></i></li>
-            <li class="star"><i class="fa fa-star"></i></li>
-            <li class="star"><i class="fa fa-star"></i></li>
+            <li class="star"><i class="fa fa-star" ></i></li>
+            <li class="star"><i class="fa fa-star" ></i></li>
+            <li class="star"><i class="fa fa-star" ></i></li>
             </ul>
-            <span class="moves-counter">0</span> Moves
-            <div class="timer-container">
-                <span class="timer"><i class="fa fa-hourglass-start"></i> Timer: 00:00</span>
-            </div>
             <div class="reset">
                 <button class="btn reset-btn">Reset <i class="fa fa-repeat"></i></button>
             </div>
@@ -35,12 +30,34 @@
             <tr class="deck"></tr>
         </table>
     </div>
-
     <!-- Modal -->
     <section class="win-game-modal">
-        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="close">&times</span>
+                <h2 id="won">Excellent!</h2>
+                <h3 id="won">Party on, Garth!</h3>
+                <br>
+                <br>
+                <img src="./img/Vault-Boy-Thumb-Up.jpg" alt="">
+                <br>
+                <P>You found all 8 pairs</P>
+                <br>
+                <span class="moves-counter">0</span> Moves
+                        <br>
+                    <div class="timer-container">
+                        <span class="timer"><i class="fa fa-hourglass-start"></i> Timer: 00:00</span>
+                    </div>
+                    <br>
+                <button class="btn"></button>
+                <br>
+                <button class="play-again-btn">Play Again?</button>
+            </div>
+        </div>
     </section>
-
-    <!-- TODO: Connect the given JS file to your HTML -->
+    <script src="./js/index.js">
+    </script>;
+</body>
+    
 </body>
 </html>
